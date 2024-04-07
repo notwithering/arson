@@ -11,6 +11,7 @@ Be careful, if you're too devious government officials may attempt to track you 
 package main
 
 import (
+	"fmt"
 	"time"
 
 	"github.com/notwithering/arson"
@@ -21,9 +22,10 @@ func main() {
 	go arson.Commit(&str)
 	for {
 		fmt.Println(str)
-		time.Sleep(50 * time.Millesecond)
+		time.Sleep(50 * time.Millisecond)
 	}
 }
+
 ```
 ```
 my life
